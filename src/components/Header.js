@@ -4,18 +4,40 @@ import Link from 'next/link'
 
 export const Header = () => {
   return (
-    <Box bg='white' w='100%' p={2}>
-      <Container as={Flex} color='black' justifyContent='space-between' fontSize="md" size="lg" fontWeight="bold">
+    <Box bg='white' w='100%' p={2} marginBottom='1rem'>
+      <Container as={Flex} maxWidth='1110px' color='black' justifyContent='space-between' fontSize="md" fontWeight='bold' alignItems='center' size={{lg: 'lg'}}>
           <Flex gap='1.5rem'>
               <Flex><Link href='#'>Emiliano</Link></Flex>
               {/* <Flex><Button><Image src='/public/moon.svg' alt='moon' width='20' height='20' /></Button></Flex> */}
           </Flex>
 
-          <Flex as="ul" listStyleType="none" gap="2rem">
-            <li><Link href="https://github.com/EmilianoCBE">Github</Link></li>
-            <li><Link href="https://emilianocbe.github.io">Portfolio</Link></li>
-            <li><Link href="https://www.linkedin.com/in/emiliano-carrizales">Linkedin</Link></li>
+          <Flex listStyleType="none" gap="1rem" alignItems='center'>
+            <Link href="https://www.linkedin.com/in/emiliano-carrizales">
+              <Image src="/icon-in.svg" alt="" width={32} height="32"/>
+            </Link>
+            <Link href="https://github.com/EmilianoCBE">
+              <Image src="/icon-github.svg" alt="" width={32} height="32"/>
+            </Link>
+            <Link href="https://emilianocbe.github.io">Portfolio</Link>
           </Flex>
+
+          {/* <Flex gap="1rem">
+              <Link href="https://github.com/EmilianoCBE">
+                <Image src="/icon-github.svg" alt="" width={24} height="24"/>
+              </Link>
+              
+              <Link href="#">
+                <Image src="/icon-twiter.svg" alt="" width={24} height="24"/>
+              </Link>
+              
+              <Link href="#">
+                <Image src="/icon-instagram.svg" alt="" width={24} height="24"/>
+              </Link>
+              
+              <Link href="#">
+                <Image src="/icon-pinterest.svg" alt="" width={24} height="24"/>
+              </Link>
+          </Flex>   */}
         </Container>          
     </Box>
   )
