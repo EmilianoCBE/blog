@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Stack } from "@chakra-ui/react"
+import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react"
 
 export const Introduction = () => {
   return (
@@ -8,10 +8,10 @@ export const Introduction = () => {
           Hello World!
         </Heading>
         <Stack as='ul' listStyleType='none'>
-          <li>I´m Emiliano Carrizales, a 22 years-old Frontend Developer</li>
-          <li>Self taught programmer, an exercise addict, and a life enyojer</li>
-          <li>A begginer in this Web Development World, learning to use Next.js</li>
-          <li>Always living in my mind</li>
+          <Text fontSize='md'><span>🖖</span>I´m Emiliano Carrizales, a 22 years-old Frontend Developer</Text>
+          <Text fontSize='md'><span>🧑‍💻</span>Self taught programmer, an exercise addict, and a life enyojer</Text>
+          <Text fontSize='md'><span>🌎</span>A begginer in this Web Development World, learning to use Next.js</Text>
+          <Text fontSize='md'><span>🌱</span> Always living in my mind</Text>
         </Stack>
       </Container>
     </Box>
