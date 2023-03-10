@@ -20,7 +20,6 @@ import {defineStyle, defineStyleConfig} from '@chakra-ui/react'
 // })
 
 
-
 export default function App({ Component, pageProps }) {
   return (
     <ChakraProvider>
