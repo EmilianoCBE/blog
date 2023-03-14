@@ -8,10 +8,10 @@ export const Introduction = () => {
           Hello World!
         </Heading>
         <Stack as='ul' listStyleType='none'>
-          <Text fontSize='md'><span>🖖</span>I´m Emiliano Carrizales, a 22 years-old Frontend Developer</Text>
-          <Text fontSize='md'><span>🧑‍💻</span>Self taught programmer, an exercise addict, and a life enyojer</Text>
+          <Text fontSize='md'><span>🖖</span>I´m Emiliano Carrizales, a 22 years-old Frontend Developer.</Text>
+          <Text fontSize='md'><span>🧑‍💻</span>Self taught programmer, an exercise addict, and a life enyojer.</Text>
           <Text fontSize='md'><span>🌎</span>A begginer in this Web Development World, learning to use Next.js</Text>
-          <Text fontSize='md'><span>🌱</span> Always living in my mind</Text>
+          <Text fontSize='md'><span>🌱</span> Always living in my mind.</Text>
         </Stack>
       </Container>
     </Box>
