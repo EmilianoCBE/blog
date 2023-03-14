@@ -1,14 +1,14 @@
-import { Box, Container, Flex, Text } from "@chakra-ui/react"
 import Image from "next/image"
 import Link from "next/link"
-import { useColorMode } from '@chakra-ui/react'
+
+import { Box, Container, Flex, Text, useColorMode  } from "@chakra-ui/react"
 
 export const Description = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <Box> 
-      <Container as='Flex'size={{lg: 'lg'}} alignItems='left'>
+      <Container as='Flex'msize={{lg: 'lg'}} alignItems='left'>
         <Text lineHeight='1.8rem'>
             This blog will serve as a thought disposer, as a life and tech knowledge
             diary, and also for curiosities and random night thoughts.

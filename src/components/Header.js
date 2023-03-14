@@ -1,7 +1,7 @@
-import { Container, Box, Flex, Button, Show, Hide } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useColorMode } from '@chakra-ui/react'
+
+import { Container, Box, Flex, Button, Hide, useColorMode } from '@chakra-ui/react'
 
 export const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode()
@@ -13,10 +13,8 @@ export const Header = () => {
               <Flex>
                 <Link href='#'>Emiliano</Link>
               </Flex>
-              {/* <Flex><Button><Image src='/public/moon.svg' alt='moon' width='20' height='20' /></Button></Flex> */}
               <Flex>
                   <Button onClick={toggleColorMode}>
-                    {/* {colorMode === 'light' ? <Image src='/moon.svg' alt='moon' width='20' height='20' /> : <Image src='/sun.svg' alt='moon' width='20' height='20' />} */}
                     {colorMode === 'light' ? 'Dark mode' : 'Light mode'}
                   </Button>
               </Flex>
@@ -35,7 +33,6 @@ export const Header = () => {
                   <Image src="/icon-github-light.svg" alt="" width="32" height="32"/>
                   : <Image src="/icon-github-dark.svg" alt="" width="32" height="32"/>
                 }
-                {/* <Image src="/icon-github-light.svg" alt="" width={32} height="32"/> */}
               </Link>
               <Link href="https://emilianocbe.github.io">Portfolio</Link>
             </Flex>
