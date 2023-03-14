@@ -22,10 +22,17 @@ export const Header = () => {
 
           <Flex listStyleType="none" gap="1rem" alignItems='center'>
             <Link href="https://www.linkedin.com/in/emiliano-carrizales">
-              <Image src="/icon-in.svg" alt="" width={32} height="32" color='white'/>
+              {colorMode === 'light' ? 
+                <Image src="/icon-in-light.svg" alt="" width="32" height="32"/>
+                : <Image src="/icon-in-dark.svg" alt="" width="32" height="32"/>
+              }
             </Link>
             <Link href="https://github.com/EmilianoCBE">
-              <Image src="/icon-github.svg" alt="" width={32} height="32"/>
+              {colorMode === 'light' ? 
+                <Image src="/icon-github-light.svg" alt="" width="32" height="32"/>
+                : <Image src="/icon-github-dark.svg" alt="" width="32" height="32"/>
+              }
+              {/* <Image src="/icon-github-light.svg" alt="" width={32} height="32"/> */}
             </Link>
             <Link href="https://emilianocbe.github.io">Portfolio</Link>
           </Flex>
