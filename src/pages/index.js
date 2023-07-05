@@ -1,11 +1,13 @@
 import Head from 'next/head'
 
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, Flex, Grid } from '@chakra-ui/react'
 
 import { Header } from '@/components/Header'
 import { Introduction } from '@/components/Introduction'
 import { Description } from '@/components/Description'
 import CardContainer from '@/components/CardContainer'
+import ToolsCard from '@/components/ToolsCard'
+import ExperienceCard from '@/components/ExperienceCard'
 
 
 export default function Home() {
@@ -30,7 +32,11 @@ export default function Home() {
             <Description />
           </Container>
         </Box>
+        <Box p={{sm: '15px', lg: '30px'}} as={Grid} templateColumns='repeat(3, 1fr)' gap='20px'>
           <CardContainer />
+          <ToolsCard />
+          <ExperienceCard />
+        </Box>
       </main>
     </>
   )
