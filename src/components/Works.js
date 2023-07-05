@@ -17,7 +17,7 @@ export const Works = () => {
         >
           Recent works and projects
         </Heading>
-        <Text lineHeight='1.8rem' textAlign='center' marginBottom={{base: '12px', lg: '24px'}}>
+        <Text lineHeight='1.8rem' textAlign='center' marginBottom={{base: '12px', lg: '24px'}} fontSize='20px'>
           These some of the works I´ve made using HTML, CSS, React, NexJS and ChakraUI
         </Text>
 

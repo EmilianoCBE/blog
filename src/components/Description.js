@@ -4,7 +4,6 @@ import Link from "next/link"
 import { Box, Container, Flex, Heading, Text, useColorMode  } from "@chakra-ui/react"
 
 export const Description = () => {
-  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <Box padding={{base: '75px', lg: '140px 0'}}> 
@@ -18,7 +17,7 @@ export const Description = () => {
         >
           Hello World! I´m Emiliano
         </Heading>
-        <Text lineHeight='1.8rem' textAlign='center'>
+        <Text lineHeight='1.8rem' textAlign='center' fontSize='20px'>
           I am a self-taught programmer starting his way in the world of web development. 
           I have created several applications and pages as personal projects and I have worked in a design agency as a frontend developer. 
           Always looking forward to the future and to enrich myself with new knowledge and skills to apply them not only at work, but also in my day to day life.

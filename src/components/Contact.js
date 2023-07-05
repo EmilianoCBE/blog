@@ -1,10 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import { Box, Container, Flex, Heading, Text, useColorMode  } from "@chakra-ui/react"
+import { Box, Container, Flex, Heading, Text  } from "@chakra-ui/react"
 
 export const Contact = () => {
-  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <Box padding={{base: '75px', lg: '100px 0'}}> 
@@ -32,7 +31,7 @@ export const Contact = () => {
             flexDirection='column' 
             alignItems='center'
           >
-            <Text lineHeight='1.8rem' textAlign='center'>
+            <Text lineHeight='1.8rem' textAlign='center' fontSize='20px' marginBottom='1rem'>
               You can find me on LinkedIn here: 
             </Text>
             <Link href="https://www.linkedin.com/in/emiliano-carrizales">
@@ -40,7 +39,7 @@ export const Contact = () => {
             </Link>
           </Box>
           <Box as={Flex} flexDirection='column' alignItems='center'>
-            <Text lineHeight='1.8rem' textAlign='center'>
+            <Text lineHeight='1.8rem' textAlign='center' fontSize='20px' marginBottom='1rem'>
               Visit my Github: 
             </Text>
             <Link href="https://github.com/EmilianoCBE">
