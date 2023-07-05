@@ -4,7 +4,7 @@ export const Introduction = () => {
   return (
     <Container size={{lg: 'lg'}} p='48px'>
         <Flex flexDirection='column' alignItems='center'> 
-        <Heading as='h1' size='2xl' noOfLines={1} marginBottom='1.5rem' textAlign='center'>
+        <Heading as='h1' size='2xl' noOfLines={{base: 2, md: 1}} marginBottom='1.5rem' textAlign='center'>
           Frontend Developer
         </Heading>
         <Heading as='h2' fontSize='24px' noOfLines={1} marginBottom='1.5rem' textAlign='center' fontWeight='500'>

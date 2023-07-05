@@ -7,7 +7,7 @@ export const Description = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Box padding={{base: '75px 15px', lg: '140px 0'}}> 
+    <Box padding={{base: '75px', lg: '140px 0'}}> 
       <Container as='Flex' size={{lg: 'lg'}} alignItems='center' maxW="800">
         <Heading 
           as='h2' 

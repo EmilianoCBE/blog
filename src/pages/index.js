@@ -6,6 +6,8 @@ import { Header } from '@/components/Header'
 import { Introduction } from '@/components/Introduction'
 import { Description } from '@/components/Description'
 import CardContainer from '@/components/CardContainer'
+import { Works } from '@/components/Works'
+import { Contact } from '@/components/Contact'
 
 export default function Home() {
   return (
@@ -83,6 +85,14 @@ export default function Home() {
             </Text>
           </CardContainer>
         </Flex>
+
+        <Works />
+
+        <Box backgroundColor='#06dfd5'>
+          <Container size={{lg: 'lg'}} maxW="800">
+            <Contact />
+          </Container>
+        </Box>
       </main>
     </>
   )
