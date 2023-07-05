@@ -1,22 +1,23 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import { Box, Container, Flex, Text, useColorMode  } from "@chakra-ui/react"
+import { Box, Container, Flex, Heading, Text, useColorMode  } from "@chakra-ui/react"
 
 export const Description = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Box> 
-      <Container as='Flex'msize={{lg: 'lg'}} alignItems='left'>
-        <Text lineHeight='1.8rem'>
-            This blog will serve as a thought disposer, as a life and tech knowledge
-            diary, and also for curiosities and random night thoughts.
-            Currently working on improving this site as it is my first blog ever so
-            I´ll keep learning to make this reading experience the best I can.
-            I´ll also leave my social media sites so we can keep in touch.
+    <Box padding='140px 0'> 
+      <Container as='Flex' size={{lg: 'lg'}} alignItems='center' maxW="800">
+        <Heading as='h2' fontSize='32px' noOfLines={1} marginBottom='1.5rem' textAlign='center'>
+          Hello World! I´m Emiliano
+        </Heading>
+        <Text lineHeight='1.8rem' textAlign='center'>
+          I am a self-taught programmer starting his way in the world of web development. 
+          I have created several applications and pages as personal projects and I have worked in a design agency as a frontend developer. 
+          Always looking forward to the future and to enrich myself with new knowledge and skills to apply them not only at work, but also in my day to day life.
         </Text>
-        <Flex listStyleType="none" gap="1rem" alignItems='center' margin='1rem 0'>
+        {/* <Flex listStyleType="none" gap="1rem" alignItems='center' margin='1rem 0' as='div'>
           <Link href="https://www.linkedin.com/in/emiliano-carrizales">
             {colorMode === 'light' ? 
               <Image src="/icon-in-light.svg" alt="" width="32" height="32"/>
@@ -30,7 +31,7 @@ export const Description = () => {
             }
           </Link>            
           <Link href="https://emilianocbe.github.io">Portfolio</Link>
-        </Flex>
+        </Flex> */}
       </Container>
     </Box>
   )

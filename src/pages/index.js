@@ -1,11 +1,11 @@
 import Head from 'next/head'
 
-import { Container } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 
 import { Header } from '@/components/Header'
 import { Introduction } from '@/components/Introduction'
 import { Description } from '@/components/Description'
-import ArticlesContainer from '@/components/ArticlesContainer'
+import CardContainer from '@/components/CardContainer'
 
 
 export default function Home() {
@@ -22,13 +22,15 @@ export default function Home() {
 
       <Header />
       <main>
-        <Container size={{lg: 'lg'}}>
+        <Container size={{lg: 'lg'}} maxW="800">
           <Introduction />
-
-          <Description />
-
-          <ArticlesContainer />
         </Container>
+        <Box backgroundColor='#06dfd5'>
+          <Container size={{lg: 'lg'}} maxW="800">
+            <Description />
+          </Container>
+        </Box>
+          <CardContainer />
       </main>
     </>
   )

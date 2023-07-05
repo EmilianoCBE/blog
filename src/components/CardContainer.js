@@ -1,14 +1,14 @@
 import { Box, Container, Button, Text, Flex, Heading } from "@chakra-ui/react"
 import Link from "next/link"
 
-const ArticlesContainer = () => {
+const CardContainer = () => {
   return (
-    <Box as='article'>
+    <Box as='article' p={{sm: '15px', lg: '30px'}} background='#FFF'>
         <Container as='Flex'msize={{lg: 'lg'}} alignItems='left'>
           <Link href='/mountains-philosophy'>
-            <Box as={Flex} borderRadius='lg' p={4} alignItems='flex-start' justifyContent='space-between' border='1px' flexDirection='column' gap='1rem' _hover={{ boxShadow: '2xl'}} transition='box-shadow 200ms ease-in-out, transform 200ms ease-in-out' _active={{boxShadow: '2xl'}}>
+            <Box as={Flex} borderRadius='lg' p={4} alignItems='flex-start' justifyContent='space-between' border='1px' borderColor='#E6ECF8' flexDirection='column' gap='1rem' _hover={{ boxShadow: '2xl'}} transition='box-shadow 200ms ease-in-out, transform 200ms ease-in-out' _active={{boxShadow: '2xl'}}>
               <Heading as='h2' size='md'>
-                Mountains of Philosophy
+                Frontend Developer
               </Heading>
               <Text>
                 This is the starting point of my path to philosophy with a brief definition of what philosophy is for me.
@@ -23,7 +23,7 @@ const ArticlesContainer = () => {
   )
 }
 
-export default ArticlesContainer
+export default CardContainer
 
 // {colorMode === 'light' ? 
 //                   <Image src="/icon-in-light.svg" alt="" width="32" height="32"/>

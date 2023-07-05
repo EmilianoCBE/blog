@@ -7,7 +7,7 @@ export const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Box w='100%' p={2} marginBottom='1rem'>
+    <Box w='100%' p='2rem 0'>
       <Container as={Flex} maxWidth='1110px' justifyContent='space-between' fontSize="md" fontWeight='bold' alignItems='center' size={{lg: 'lg'}}>
           <Flex gap='1.5rem' alignItems='center' width={{base: '100%', md: 'initial'}} justifyContent='space-between'>
               <Flex>
