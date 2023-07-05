@@ -1,29 +1,27 @@
 import { Box, Container, Button, Text, Flex, Heading } from "@chakra-ui/react"
-import Link from "next/link"
 
-const CardContainer = () => {
+const CardContainer = ({children}) => {
   return (
-    <Box as='article' background='#FFF'>
-        <Container as='Flex'msize={{lg: 'lg'}} alignItems='left'>
-          <Link href='/mountains-philosophy'>
-            <Box as={Flex} borderRadius='lg' p={4} alignItems='flex-start' justifyContent='space-between' border='1px' borderColor='#E6ECF8' flexDirection='column' gap='1rem' _hover={{ boxShadow: '2xl'}} transition='box-shadow 200ms ease-in-out, transform 200ms ease-in-out' _active={{boxShadow: '2xl'}}>
-              <Heading as='h2' size='md'>
-                Known languages and frameworks
-              </Heading>
-              <Text>
-                HTML
-              </Text>
-              <Text>
-                CSS
-              </Text>
-              <Text>
-                JavaScript
-              </Text>
-              {/* <Button>
-                <Link href='/mountains-philosophy'>Go to page</Link>
-              </Button>   */}
-            </Box>
-          </Link>
+    <Box as='article' background='#FFF' minW={{sm: '200px', lg: '400px'}} maxW={'320px'}>
+        <Container as='Flex' size={{lg: 'lg'}}>
+          <Box as={Flex} 
+            borderRadius='lg' 
+            p={4} 
+            justifyContent='space-between' 
+            border='1px' 
+            borderColor='#E6ECF8' 
+            flexDirection='column' 
+            gap='1rem'
+            // _hover={{ boxShadow: '2xl'}} 
+            // transition='box-shadow 200ms ease-in-out, transform 200ms ease-in-out' 
+            // _active={{boxShadow: '2xl'}} 
+            marginTop='-6rem'
+            background='#FFF'
+            alignItems='center'
+            textAlign='center'
+          >
+            {children}
+          </Box>
         </Container>
     </Box>
   )

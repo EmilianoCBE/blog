@@ -1,14 +1,11 @@
 import Head from 'next/head'
 
-import { Box, Container, Flex, Grid } from '@chakra-ui/react'
+import { Box, Container, Flex, Grid, Heading, Text } from '@chakra-ui/react'
 
 import { Header } from '@/components/Header'
 import { Introduction } from '@/components/Introduction'
 import { Description } from '@/components/Description'
 import CardContainer from '@/components/CardContainer'
-import ToolsCard from '@/components/ToolsCard'
-import ExperienceCard from '@/components/ExperienceCard'
-
 
 export default function Home() {
   return (
@@ -32,11 +29,55 @@ export default function Home() {
             <Description />
           </Container>
         </Box>
-        <Box p={{sm: '15px', lg: '30px'}} as={Grid} templateColumns='repeat(3, 1fr)' gap='20px'>
-          <CardContainer />
-          <ToolsCard />
-          <ExperienceCard />
-        </Box>
+        <Flex 
+          p={{sm: '15px', lg: '30px'}}  
+          flexDirection='column'
+          // flexDirection={{xs: 'column', lg: 'row'}}
+          // justifyContent={{lg: 'space-around'}}
+        >
+          <CardContainer>
+            <Heading as='h2' size='md'>
+              Known languages and frameworks
+            </Heading>
+            <Text>
+              HTML
+            </Text>
+            <Text>
+              CSS
+            </Text>
+            <Text>
+              JavaScript
+            </Text>
+          </CardContainer>
+          <CardContainer>
+            <Heading as='h2' size='md'>
+              Dev Tools
+            </Heading>
+            <Text>
+              VSCode
+            </Text>
+            <Text>
+              Git
+            </Text>
+            <Text>
+              Github
+            </Text>
+          </CardContainer>
+          <CardContainer>
+            <Heading as='h2' size='md'>
+              Stats and Experience
+            </Heading>
+            <Text>
+              Courses
+            </Text>
+            <Text>
+              Platzi
+            </Text>
+            <Text>
+              Design Agency
+            </Text>
+          </CardContainer>
+        </Flex>
       </main>
     </>
   )
