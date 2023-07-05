@@ -30,13 +30,18 @@ export default function Home() {
           </Container>
         </Box>
         <Flex 
-          p={{sm: '15px', lg: '30px'}}  
-          flexDirection='column'
+          paddingX={{base: '15px', lg: '30px'}}  
+          flexDirection={{base: 'column', md: 'row'}} //md=770px sm=480px lg=990px
+          alignItems='center'
           // flexDirection={{xs: 'column', lg: 'row'}}
-          // justifyContent={{lg: 'space-around'}}
+          justifyContent={{md: 'space-around'}}
         >
           <CardContainer>
-            <Heading as='h2' size='md'>
+            <Heading 
+              as='h2' 
+              size='md'
+              noOfLines={{base: 2, lg: 1}}
+            >
               Known languages and frameworks
             </Heading>
             <Text>

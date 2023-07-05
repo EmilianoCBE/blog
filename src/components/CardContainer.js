@@ -2,7 +2,7 @@ import { Box, Container, Button, Text, Flex, Heading } from "@chakra-ui/react"
 
 const CardContainer = ({children}) => {
   return (
-    <Box as='article' background='#FFF' minW={{sm: '200px', lg: '400px'}} maxW={'320px'}>
+    <Box as='article' background='#FFF'>
         <Container as='Flex' size={{lg: 'lg'}}>
           <Box as={Flex} 
             borderRadius='lg' 
@@ -10,15 +10,18 @@ const CardContainer = ({children}) => {
             justifyContent='space-between' 
             border='1px' 
             borderColor='#E6ECF8' 
-            flexDirection='column' 
-            gap='1rem'
+            gap={{base: '1rem', md: '1.5rem'}}
+            flexDirection='column'
             // _hover={{ boxShadow: '2xl'}} 
             // transition='box-shadow 200ms ease-in-out, transform 200ms ease-in-out' 
             // _active={{boxShadow: '2xl'}} 
-            marginTop='-6rem'
+            minW={{base: '330px', sm: '400px', md: '230px', lg: '300px', xl: '400px'}} 
+            marginTop={{base: '0', md: '-6rem'}}
             background='#FFF'
             alignItems='center'
             textAlign='center'
+            maxW={{md: '230px', lg: 'auto'}}
+            minH={{base: '100px', md: '200px'}}
           >
             {children}
           </Box>

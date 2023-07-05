@@ -7,9 +7,15 @@ export const Description = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Box padding='140px 0'> 
+    <Box padding={{base: '75px 15px', lg: '140px 0'}}> 
       <Container as='Flex' size={{lg: 'lg'}} alignItems='center' maxW="800">
-        <Heading as='h2' fontSize='32px' noOfLines={1} marginBottom='1.5rem' textAlign='center'>
+        <Heading 
+          as='h2' 
+          fontSize='32px' 
+          noOfLines={{base: 2, md: 1}} 
+          marginBottom='1.5rem' 
+          textAlign='center'
+        >
           Hello World! I´m Emiliano
         </Heading>
         <Text lineHeight='1.8rem' textAlign='center'>
