@@ -6,8 +6,8 @@ import { Box, Container, Flex, Heading, Text, useColorMode  } from "@chakra-ui/r
 export const Description = () => {
 
   return (
-    <Box padding={{base: '75px', lg: '140px 0'}}> 
-      <Container as='Flex' size={{lg: 'lg'}} alignItems='center' maxW="800">
+    <Box padding={{base: '75px 0', lg: '140px 0'}}> 
+      <Container size={{lg: 'lg'}} alignItems='center' maxW="800">
         <Heading 
           as='h2' 
           fontSize='32px' 

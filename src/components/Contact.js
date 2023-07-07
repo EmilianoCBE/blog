@@ -40,7 +40,7 @@ export const Contact = () => {
           </Box>
           <Box as={Flex} flexDirection='column' alignItems='center'>
             <Text lineHeight='1.8rem' textAlign='center' fontSize='20px' marginBottom='1rem'>
-              Visit my Github: 
+              Check out my Github: 
             </Text>
             <Link href="https://github.com/EmilianoCBE">
               <Image src="/icon-github-light.svg" alt="Github icon" width="100" height="100"/>
