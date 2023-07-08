@@ -29,23 +29,23 @@ export const Works = () => {
           p={{base: '32px 36px', lg:'64px 72px'}}
         >
           <GridItem w='100%' h='100%'>
-            <Link href='/'>
+            <Link href='https://emilianocbe.github.io/portfolio-project-one/'>
               <Image src='/first-p.png' alt='Portafolio image' borderRadius='base'/>
             </Link>
           </GridItem>
           <GridItem w='100%' h='100%'>
-            <Link href='/'>
+            <Link href='https://e-commerce-portfolio-snowy.vercel.app'>
               <Image src='/second-p.png' alt='Portafolio image' borderRadius='base'/>
             </Link>
           </GridItem>
           <GridItem w='100%' h='100%'>
-            <Link href='/'>
+            <Link href='https://cerulean-chimera-b6ffa3.netlify.app'>
               <Image src='/third-p.png' alt='Portafolio image' borderRadius='base'/>
             </Link>
           </GridItem>
           <GridItem w='100%'>
-            <Link href='/'>
-              <Image src='/first-p.png' alt='Portafolio image' borderRadius='base'/>
+            <Link href='https://lively-souffle-5e0206.netlify.app'>
+              <Image src='/fourth-p.png' alt='Portafolio image' borderRadius='base'/>
             </Link>
           </GridItem>
         </Grid>
