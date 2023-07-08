@@ -8,7 +8,7 @@ export const Introduction = () => {
           Frontend Developer
         </Heading>
         <Heading as='h2' fontSize='24px' noOfLines={1} marginBottom='1.5rem' textAlign='center' fontWeight='400' fontFamily='Oxygen'>
-          Hello World! 
+          Coding since birth (maybe not)
         </Heading>
         <Image borderRadius='full' boxSize='250px' src='/main.JPG' alt='Emiliano'/>
         {/* <Image src='/browser-coding-svgrepo-com.svg' alt='Coding icon' /> */}

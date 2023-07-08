@@ -11,7 +11,7 @@ export const Contact = () => {
         <Heading 
           as='h2' 
           fontSize='32px' 
-          noOfLines={{base: 2, md: 1}} 
+          noOfLines={{base: 3, md: 2}} 
           marginBottom='1.5rem' 
           textAlign='center'
         >
@@ -20,7 +20,7 @@ export const Contact = () => {
         <Flex 
           listStyleType="none" 
           gap="1rem" 
-          alignItems='center' 
+          alignItems='flex-start' 
           margin='1rem 0' 
           as='div'
           flexDirection={{base: 'column', md: 'row'}}
@@ -45,6 +45,15 @@ export const Contact = () => {
             <Link href="https://github.com/EmilianoCBE">
               <Image src="/icon-github-light.svg" alt="Github icon" width="100" height="100"/>
             </Link>
+          </Box> 
+          <Box as={Flex} flexDirection='column' alignItems='center'>
+            <Text lineHeight='1.8rem' textAlign='center' fontSize='20px' marginBottom='1rem'>
+              Or send an email:
+            </Text>
+            {/* <Link href="https://github.com/EmilianoCBE">
+              <Image src="/icon-github-light.svg" alt="Github icon" width="100" height="100"/>
+            </Link> */}
+            <a href="mailto:e.carrizales1305@gmail.com">e.carrizales1305@gmail.com</a>
           </Box> 
         </Flex>
       </Container>

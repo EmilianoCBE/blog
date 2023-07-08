@@ -14,10 +14,11 @@ export const Works = () => {
           noOfLines={{base: 2, md: 1}} 
           marginBottom='1.5rem' 
           textAlign='center'
+          paddingX={{base: '15px'}}
         >
           Recent works and projects
         </Heading>
-        <Text lineHeight='1.8rem' textAlign='center' marginBottom={{base: '12px', lg: '24px'}} fontSize='20px'>
+        <Text lineHeight='1.8rem' textAlign='center' paddingX={{base: '15px'}} marginBottom={{base: '12px', lg: '24px'}} fontSize='20px'>
           These some of the works I´ve made using HTML, CSS, React, NexJS and ChakraUI
         </Text>
 

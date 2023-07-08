@@ -32,7 +32,7 @@ export default function Home() {
         <Flex 
           paddingX={{base: '15px', lg: '30px'}}  
           flexDirection={{base: 'column', md: 'row'}} //md=770px sm=480px lg=990px
-          alignItems='center'
+          alignItems={{base: 'center', md: 'flex-start'}}
           gap={{base: '1rem', md: '1.5rem'}}
           marginTop={{base: '1.5rem', md: '1.5rem'}}
           // flexDirection={{xs: 'column', lg: 'row'}}
@@ -56,6 +56,18 @@ export default function Home() {
             <Text>
               JavaScript
             </Text>
+            <Text>
+              React
+            </Text>
+            <Text>
+              NextJS
+            </Text>
+            <Text>
+              ChakraUI
+            </Text>
+            <Text>
+              Bootstrap
+            </Text>
           </CardContainer>
           <CardContainer>
             <Image src='/devtools.svg' boxSize='100px' alt='Laptop icon'/>
@@ -78,13 +90,16 @@ export default function Home() {
               Stats and Experience
             </Heading>
             <Text>
-              Courses
+              Nett design agency
             </Text>
             <Text>
-              Platzi
+              JavaScript Algorithms and Data structures - FreeCodeCamp
             </Text>
             <Text>
-              Design Agency
+              Responsive Web Design - FreeCodeCamp
+            </Text>
+            <Text>
+              Frontend Con React JS - PlatzI
             </Text>
           </CardContainer>
         </Flex>
